@@ -6,8 +6,8 @@ namespace AlgorithmProblem
     {
         static void Main(string[] args)
         {
-            
-            Console.WriteLine("1. Swing permutation\n2. Binary Search");
+            Console.WriteLine("Choose program number");
+            Console.WriteLine("1. Swing permutation\n2. Binary Search\n3. Insertion Sort");
             int opt = int.Parse(Console.ReadLine());
             switch (opt)
             {
@@ -23,6 +23,12 @@ namespace AlgorithmProblem
                     string word = Console.ReadLine();
                     BinarySearch<string> bs = new BinarySearch<string>(arr,word);
                     bs.Search(0, arr.Length - 1);
+                    break;
+                case 3:
+                    string test = "Welcome to tech hub India";
+                    var testArr = test.Split(" ");
+                    InsertionSort<string> insertionSort = new InsertionSort<string>();
+                    insertionSort.sortingArray(testArr);
                     break;
             }
         }  
