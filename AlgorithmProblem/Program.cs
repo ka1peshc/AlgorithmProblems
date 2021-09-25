@@ -7,7 +7,7 @@ namespace AlgorithmProblem
         static void Main(string[] args)
         {
             Console.WriteLine("Choose program number");
-            Console.WriteLine("1. Swing permutation\n2. Binary Search\n3. Insertion Sort");
+            Console.WriteLine("1. Swing permutation\n2. Binary Search\n3. Insertion Sort\n4.Bubble Sort");
             int opt = int.Parse(Console.ReadLine());
             switch (opt)
             {
@@ -29,6 +29,13 @@ namespace AlgorithmProblem
                     var testArr = test.Split(" ");
                     InsertionSort<string> insertionSort = new InsertionSort<string>();
                     insertionSort.sortingArray(testArr);
+                    break;
+                case 4:
+                    List<int> intArr = new List<int>{ 51, 75, 98, 44, 21, 36 };
+                    BubbleSort bubbleSort = new BubbleSort();
+                    Console.WriteLine("Before sorting");
+                    bubbleSort.PrintArry(intArr);
+                    bubbleSort.Search(intArr);
                     break;
             }
         }  
