@@ -15,7 +15,7 @@ namespace AlgorithmProblem
             {
                 var charValArr = val.ToCharArray();
                 var charTempArr = temp.ToCharArray();
-                if(charValArr[0].CompareTo(charTempArr[0]) > 0)
+                if(charValArr[0].CompareTo(charTempArr[0]) < 0)
                 {
                     result= true;
                 }
@@ -26,11 +26,11 @@ namespace AlgorithmProblem
             }
             else if( valLength > tempLength)
             {
-                result = true;
+                result = false;
             }
             else
             {
-                result = false;
+                result = truex;
             }
             return result;
         }
