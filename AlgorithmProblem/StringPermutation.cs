@@ -8,7 +8,7 @@ namespace AlgorithmProblem
     {
         internal static List<string> permutationNames;
         
-        public static void permute(String s, int startIndex, int endIndex)
+        public static void Permute(String s, int startIndex, int endIndex)
         {
             if(startIndex == endIndex)
             {
@@ -19,14 +19,14 @@ namespace AlgorithmProblem
             {
                 for(int i = startIndex; startIndex < endIndex; startIndex++)
                 {
-                    s = swaping(s, startIndex, i);
-                    permute(s, startIndex + 1, endIndex);
-                    s = swaping(s, startIndex, i);
+                    s = Swaping(s, startIndex, i);
+                    Permute(s, startIndex + 1, endIndex);
+                    s = Swaping(s, startIndex, i);
                 }
             }
             
         }
-        public static String swaping(String s, int i, int j)
+        public static String Swaping(String s, int i, int j)
         {
             char temp;
             char[] charArr = s.ToCharArray();
