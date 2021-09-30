@@ -6,7 +6,7 @@ namespace AlgorithmProblem
 {
     class StringPermutation
     {
-        internal static List<string> permutationNames;
+        //internal static List<string> permutationNames;
         
         public static void Permute(String s, int startIndex, int endIndex)
         {

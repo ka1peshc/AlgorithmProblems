@@ -30,7 +30,7 @@ namespace AlgorithmProblem
             }
             else
             {
-                result = truex;
+                result = true;
             }
             return result;
         }
